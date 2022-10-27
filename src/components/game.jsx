@@ -11,7 +11,7 @@ export default function Game() {
   const fetchQuestion = async() =>{
     const fetchedQuestion = await fetch('https://opentdb.com/api.php?amount=1');
     const question = await fetchedQuestion.json();
-    console.log(question.results[0]);
+    // console.log(question.results[0]);
     setQues(question.results[0]);
   }
   useEffect(() =>{
